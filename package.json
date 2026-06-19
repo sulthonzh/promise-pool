@@ -4,19 +4,47 @@
   "description": "Zero-dep async concurrency control — map/filter/each with limited concurrency, progress tracking, timeouts, and abort support",
   "type": "module",
   "main": "src/index.js",
-  "bin": { "promise-pool": "src/cli.js" },
+  "bin": {
+    "promise-pool": "src/cli.js"
+  },
   "exports": {
     ".": "./src/index.js",
     "./package.json": "./package.json"
   },
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test test/*.js"
   },
-  "keywords": ["promise", "pool", "concurrency", "parallel", "map", "filter", "async", "limit", "batch", "queue"],
+  "keywords": [
+    "promise",
+    "pool",
+    "concurrency",
+    "parallel",
+    "map",
+    "filter",
+    "async",
+    "limit",
+    "batch",
+    "queue"
+  ],
   "license": "MIT",
   "author": "sulthonzh",
-  "repository": { "type": "git", "url": "git+https://github.com/sulthonzh/promise-pool.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthonzh/promise-pool.git"
+  },
   "homepage": "https://github.com/sulthonzh/promise-pool",
-  "engines": { "node": ">=18" },
-  "files": ["src/", "README.md", "LICENSE"]
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "bugs": {
+    "url": "https://github.com/sulthonzh/promise-pool/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
